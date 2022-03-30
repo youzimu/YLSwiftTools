@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'YLSwiftTools_Example' do
+  pod 'YLSwiftTools', :path => '../'
+
+  target 'YLSwiftTools_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
