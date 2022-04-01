@@ -1,0 +1,25 @@
+PODS:
+  - MJRefresh (3.7.5)
+  - YLSwiftTools (0.0.1):
+    - YLSwiftTools/Base (= 0.0.1)
+  - YLSwiftTools/Base (0.0.1):
+    - MJRefresh
+
+DEPENDENCIES:
+  - YLSwiftTools (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - MJRefresh
+
+EXTERNAL SOURCES:
+  YLSwiftTools:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  YLSwiftTools: 95c741d1145e1b8cbe90ecae5666c70f132bd371
+
+PODFILE CHECKSUM: d948ff7fe8ae721845a75c6faa0f95b3225fa2ba
+
+COCOAPODS: 1.11.2

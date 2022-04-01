@@ -1,0 +1,6 @@
+framework module YLSwiftTools {
+  umbrella header "YLSwiftTools-umbrella.h"
+
+  export *
+  module * { export * }
+}
