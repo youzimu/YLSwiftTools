@@ -18,6 +18,12 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'YLSwiftTools'
+
+# 只引入基础库
+pod 'YLSwiftTools/Base'
+
+
+
 ```
 
 ## Author

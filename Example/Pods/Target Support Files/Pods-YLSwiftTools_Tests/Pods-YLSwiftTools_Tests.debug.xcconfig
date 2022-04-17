@@ -1,8 +1,8 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh" "${PODS_CONFIGURATION_BUILD_DIR}/YLSwiftTools"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh" "${PODS_CONFIGURATION_BUILD_DIR}/SnapKit" "${PODS_CONFIGURATION_BUILD_DIR}/YLSwiftTools" "${PODS_CONFIGURATION_BUILD_DIR}/YYText"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh/MJRefresh.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YLSwiftTools/YLSwiftTools.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "MJRefresh" -framework "YLSwiftTools"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh/MJRefresh.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SnapKit/SnapKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YLSwiftTools/YLSwiftTools.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YYText/YYText.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "Accelerate" -framework "CoreFoundation" -framework "CoreText" -framework "MJRefresh" -framework "MobileCoreServices" -framework "QuartzCore" -framework "SnapKit" -framework "UIKit" -framework "YLSwiftTools" -framework "YYText"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

@@ -56,25 +56,25 @@ public func yl_Width(_ size:CGFloat) -> CGFloat {
 
 public class YLCommom: NSObject {
     // MARK: - Pod组件添加.Pod组件添加.xcassets资源的方法资源的方法
-    public static func yl_GetXcassetsImage(_ bundleName: String, _ imageName: String) -> UIImage? {
+    public static func yl_getXcassetsImage(_ bundleName: String, _ imageName: String) -> UIImage? {
         var bundleUrl = Bundle.main.url(forResource: "Frameworks", withExtension: nil)
-        
-        var tempBundleName = bundleName
-        // MARK: - 系统默认生成下横线 XX_xx_Base.framework
-        if bundleName.contains("-") {
-            tempBundleName = tempBundleName.replacingOccurrences(of: "-", with: "_")
-        }
-        bundleUrl = bundleUrl?.appendingPathComponent(tempBundleName)
+        bundleUrl = bundleUrl?.appendingPathComponent(bundleName)
         bundleUrl = bundleUrl?.appendingPathExtension("framework")
         
         if let tassociateBundleURL = bundleUrl, let associateBunle = Bundle(url: tassociateBundleURL) {
             bundleUrl = associateBunle.url(forResource: bundleName, withExtension: "bundle")
             
-            let bundle = Bundle(url: bundleUrl!)
+            if (bundleUrl != nil) {
+                let bundle = Bundle(url: bundleUrl!)
+                
+                let image = UIImage(named: imageName, in: bundle, compatibleWith: nil)
+                
+                return image
+            }
+            else{
+                return nil
+            }
             
-            let image = UIImage(named: imageName, in: bundle, compatibleWith: nil)
-            
-            return image
         }
         else{
             return nil

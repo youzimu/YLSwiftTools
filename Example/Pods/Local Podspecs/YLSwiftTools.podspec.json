@@ -25,12 +25,25 @@
   "platforms": {
     "ios": "11.0"
   },
+  "resource_bundles": {
+    "YLSwiftTools": [
+      "YLSwiftTools/Assets/**/*.xcassets"
+    ]
+  },
+  "dependencies": {
+    "SnapKit": [
+
+    ]
+  },
   "subspecs": [
     {
       "name": "Base",
       "source_files": "YLSwiftTools/Classes/Base/**/*.swift",
       "dependencies": {
         "MJRefresh": [
+
+        ],
+        "YYText": [
 
         ]
       }

@@ -1,9 +1,14 @@
 PODS:
   - MJRefresh (3.7.5)
+  - SnapKit (5.0.1)
   - YLSwiftTools (0.0.1):
+    - SnapKit
     - YLSwiftTools/Base (= 0.0.1)
   - YLSwiftTools/Base (0.0.1):
     - MJRefresh
+    - SnapKit
+    - YYText
+  - YYText (1.0.7)
 
 DEPENDENCIES:
   - YLSwiftTools (from `../`)
@@ -11,6 +16,8 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - MJRefresh
+    - SnapKit
+    - YYText
 
 EXTERNAL SOURCES:
   YLSwiftTools:
@@ -18,7 +25,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
-  YLSwiftTools: 95c741d1145e1b8cbe90ecae5666c70f132bd371
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  YLSwiftTools: d5a3e47eaeab25b7c77471743ba5c92a65618ad7
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
 PODFILE CHECKSUM: d948ff7fe8ae721845a75c6faa0f95b3225fa2ba
 

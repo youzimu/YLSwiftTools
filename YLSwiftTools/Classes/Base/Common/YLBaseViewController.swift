@@ -11,8 +11,8 @@ open class YLBaseViewController: UIViewController {
     
     public lazy var leftBackBut: UIButton = {
         let but = UIButton.init(type: .custom)
-        but.setImage(YLCommom.yl_GetXcassetsImage("YLSwiftTools", "backArrow"), for: .normal)
-        but.setImage(YLCommom.yl_GetXcassetsImage("YLSwiftTools", "backArrow"), for: .selected)
+        but.setImage(YLCommom.yl_getXcassetsImage("YLSwiftTools", "backArrow"), for: .normal)
+        but.setImage(YLCommom.yl_getXcassetsImage("YLSwiftTools", "backArrow"), for: .selected)
         but.addTarget(self, action: #selector(leftBackClicked), for: .touchUpInside)
         return but
     }()
@@ -70,6 +70,7 @@ open class YLBaseViewController: UIViewController {
         view.backgroundColor = .white
 
         view.addSubview(customNavView)
+    
     }
 
     // MARK: - 隐藏导航栏
